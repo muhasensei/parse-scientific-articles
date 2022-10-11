@@ -1,0 +1,31 @@
+{
+  "name": "parse-scientific-articles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhasensei/parse-scientific-articles.git"
+  },
+  "keywords": [
+    "parser",
+    "science",
+    "node",
+    "js"
+  ],
+  "author": "m.zhanuzakov (zhanmuha01@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muhasensei/parse-scientific-articles/issues"
+  },
+  "homepage": "https://github.com/muhasensei/parse-scientific-articles#readme",
+  "dependencies": {
+    "axios": "^1.1.2",
+    "jsdom": "^20.0.1",
+    "nodemon": "^2.0.20"
+  }
+}
