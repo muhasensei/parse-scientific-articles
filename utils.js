@@ -23,7 +23,7 @@ const getArticleData = (page) => {
   const citeQueries = page.querySelectorAll(".gs_fl")
   const citedNumber = [];
   for (let i = 0; i < citeQueries.length; i++) {
-    citedNumber.push(citeQueries[i].textContent)
+    citedNumber.push(Number(citeQueries[i].textContent.split('by')[1]?.split('Related')[0]))
   }
 
   const titlesQueries = page.querySelectorAll(".gs_rt");
