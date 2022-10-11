@@ -14,7 +14,7 @@ const parseLinks = async () => {
         const {authors, titles, publications, years, sources, citedNumber} = getArticleData(docBody);
         for (let i = 0; i<10; i++) {
           FINAL_DATA.push({
-            authors: authors[i],
+            author: authors[i].split(',')[0],
             titles: titles[i],
             publications: publications[i],
             years: years[i],
@@ -31,7 +31,7 @@ const parseLinks = async () => {
   Promise.all(linkPromises).then(() => {
     (async () => {
       const csv = new ObjectsToCsv(FINAL_DATA);
-      await csv.toDisk(`./dataset-${searchTopic}.csv`);
+      await csv.toDisk(`./dataset-${searchTopic.replaceAll('+', '-')}.csv`);
       console.log(await csv.toString());
     })();
   })
