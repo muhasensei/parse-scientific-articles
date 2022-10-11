@@ -3,23 +3,22 @@ const axios = require('axios');
 const {stringToHTML, getArticleData} = require('./utils')
 const FINAL_DATA = []
 const ObjectsToCsv = require('objects-to-csv');
-const searchTopic = 'fault+tolerance+in+distributed+systems';
+const searchDate = 'current';
+const searchYear = 2022;
 
 const parseLinks = async () => {
-  const pages = new Array(100).fill(0);
+  const pages = new Array(3).fill(0);
   const linkPromises = pages.map(async (curr, key) => {
-    await axios.get(`https://scholar.google.com/scholar?start=${key * 10}&q=${searchTopic}&hl=en&as_sdt=0,5`)
+    await axios.get(`https://arxiv.org/list/cs.DC/${searchDate}?skip=${key * 25}&show=25`)
       .then((response) => {
         const docBody = stringToHTML(response.data)
-        const {authors, titles, publications, years, sources, citedNumber} = getArticleData(docBody);
+        const {authors, titles, subjects} = getArticleData(docBody);
         for (let i = 0; i<10; i++) {
           FINAL_DATA.push({
-            author: authors[i].split(',')[0],
+            author: authors[i],
             titles: titles[i],
-            publications: publications[i],
-            years: years[i],
-            sources: sources[i],
-            citedNumber: citedNumber[i],
+            subjects: subjects[i],
+            years: searchYear,
           })
         }
       })
@@ -31,7 +30,7 @@ const parseLinks = async () => {
   Promise.all(linkPromises).then(() => {
     (async () => {
       const csv = new ObjectsToCsv(FINAL_DATA);
-      await csv.toDisk(`./dataset-${searchTopic.replaceAll('+', '-')}.csv`);
+      await csv.toDisk(`./dataset-${searchDate}-${searchYear}.csv`);
       console.log(await csv.toString());
     })();
   })

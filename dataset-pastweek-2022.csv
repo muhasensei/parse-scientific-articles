@@ -1,0 +1,115 @@
+author,titles,subjects,years
+" 
+François Le Gall| 
+Masayuki Miyamoto| 
+Harumichi Nishimura", Distributed Merlin-Arthur Synthesis of Quantum States and Its  Applications," Quantum Physics (quant-ph); Distributed, Parallel, and Cluster Computing (cs.DC)",2022
+" 
+Mohammad Taha Toghani| 
+Soomin Lee| 
+César A. Uribe", PersA-FL: Personalized Asynchronous Federated Learning," Machine Learning (cs.LG); Artificial Intelligence (cs.AI); Distributed, Parallel, and Cluster Computing (cs.DC); Optimization and Control (math.OC); Machine Learning (stat.ML)",2022
+" 
+Mohammad Taha Toghani| 
+César A. Uribe", Unbounded Gradients in Federated Leaning with Buffered Asynchronous  Aggregation," Machine Learning (cs.LG); Artificial Intelligence (cs.AI); Distributed, Parallel, and Cluster Computing (cs.DC); Optimization and Control (math.OC); Machine Learning (stat.ML)",2022
+,,,2022
+,,,2022
+,,,2022
+,,,2022
+,,,2022
+,,,2022
+,,,2022
+" 
+Nick Brown| 
+Brandon Echols| 
+Justs Zarins| 
+Tobias Grosser", TensorFlow as a DSL for stencil-based computation on the Cerebras Wafer  Scale Engine," Distributed, Parallel, and Cluster Computing (cs.DC); Performance (cs.PF)",2022
+" 
+Didier El Baz (LAAS-SARA)", On Parallel or Distributed Asynchronous Iterations with Unbounded Delays  and Possible Out of Order Messages or Flexible Communication for Convex  Optimization Problems and Machine Learning," Distributed, Parallel, and Cluster Computing (cs.DC); Machine Learning (cs.LG); Neural and Evolutionary Computing (cs.NE)",2022
+" 
+Chao Wu| 
+Cheng Ji| 
+Geng Yuan| 
+Riwei Pan| 
+Weichao Guo| 
+Chao Yu| 
+Zongwei Zhu| 
+Yanzhi Wang", DeltaFS: Pursuing Zero Update Overhead via Metadata-Enabled Delta  Compression for Log-structured File System on Mobile Devices," Distributed, Parallel, and Cluster Computing (cs.DC)",2022
+" 
+Gergely Dániel Németh| 
+Miguel Ángel Lozano| 
+Novi Quadrianto| 
+Nuria Oliver", A Snapshot of the Frontiers of Client Selection in Federated Learning," Distributed, Parallel, and Cluster Computing (cs.DC); Artificial Intelligence (cs.AI); Cryptography and Security (cs.CR); Machine Learning (cs.LG)",2022
+" 
+Pourya Soltani| 
+Farid Ashtiani", Technical Report: Analytical Modeling and Throughput Computation of  Blockchain Sharding," Distributed, Parallel, and Cluster Computing (cs.DC)",2022
+" 
+Carl-Johannes Johnsen| 
+Tiziano De Matteis| 
+Tal Ben-Nun| 
+Johannes de Fine Licht| 
+Torsten Hoefler", Temporal Vectorization: A Compiler Approach to Automatic Multi-Pumping," Distributed, Parallel, and Cluster Computing (cs.DC); Performance (cs.PF)",2022
+" 
+Alim Ul Gias| 
+Yicheng Gao| 
+Matthew Sheldon| 
+José A. Perusquía| 
+Owen O'Brien| 
+Giuliano Casale", SampleHST: Efficient On-the-Fly Selection of Distributed Traces," Distributed, Parallel, and Cluster Computing (cs.DC); Systems and Control (eess.SY)",2022
+" 
+Osman B. Guney| 
+Suayb S. Arslan", Fault-Tolerant Strassen-Like Matrix Multiplication," Distributed, Parallel, and Cluster Computing (cs.DC)",2022
+" 
+Minghui Liwang| 
+Seyyedali Hosseinalipour| 
+Zhibin Gao| 
+Zhipeng Cheng| 
+Yuhan Su| 
+Xianbin Wang", Seamless Service Provisioning for Mobile Crowdsensing: Towards  Integrating Forward and Spot Trading Markets," Distributed, Parallel, and Cluster Computing (cs.DC)",2022
+" 
+Mohak Chadha| 
+Victor Pacyna| 
+Anshul Jindal| 
+Jianfeng Gu| 
+Michael Gerndt", Migrating from Microservices to Serverless: An IoT Platform Case Study," Distributed, Parallel, and Cluster Computing (cs.DC); Performance (cs.PF); Software Engineering (cs.SE)",2022
+" 
+Elias P. Duarte Jr.| 
+Luiz A. Rodrigues| 
+Edson T. Camargo| 
+Rogerio Turchetti", A Distributed System-level Diagnosis Model for the Implementation of  Unreliable Failure Detectors," Distributed, Parallel, and Cluster Computing (cs.DC)",2022
+" 
+Ivan Klianev", Different Perspectives on FLP Impossibility," Distributed, Parallel, and Cluster Computing (cs.DC)",2022
+" 
+Peter Robinson", What Can We Compute in a Single Round of the Congested Clique?," Distributed, Parallel, and Cluster Computing (cs.DC); Data Structures and Algorithms (cs.DS)",2022
+" 
+Ashley Tung| 
+Haiyan Wang| 
+Yue Li| 
+Zhong Wang| 
+Jingchao Sun", Spot-on: A Checkpointing Framework for Fault-Tolerant Long-running  Workloads on Cloud Spot Instances," Distributed, Parallel, and Cluster Computing (cs.DC); Genomics (q-bio.GN)",2022
+" 
+Juan Xu| 
+Ruofan Wang| 
+Yan Zhang| 
+Hongmin Huang", An Energy Balance Cluster Network Framework Based on SWIPT," Networking and Internet Architecture (cs.NI); Distributed, Parallel, and Cluster Computing (cs.DC)",2022
+" 
+Saad Mohamad| 
+Hamad Alamri| 
+Abdelhamid Bouchachia", Scaling up Stochastic Gradient Descent for Non-convex Optimisation," Machine Learning (stat.ML); Distributed, Parallel, and Cluster Computing (cs.DC); Machine Learning (cs.LG); Optimization and Control (math.OC)",2022
+" 
+Van Sy Mai| 
+Richard J. La| 
+Tao Zhang", Federated Learning with Server Learning: Enhancing Performance for  Non-IID Data," Machine Learning (cs.LG); Distributed, Parallel, and Cluster Computing (cs.DC); Optimization and Control (math.OC)",2022
+" 
+A. N. M. Sajedul Alam| 
+Junaid Bin Kibria| 
+Al Hasib Mahamud| 
+Arnob Kumar Dey| 
+Hasan Muhammed Zahidul Amin| 
+Md Sabbir Hossain| 
+Annajiat Alim Rasel", An Architectural Approach to Creating a Cloud Application for Developing  Microservices," Distributed, Parallel, and Cluster Computing (cs.DC); Networking and Internet Architecture (cs.NI)",2022
+" 
+Collin Connors| 
+Dilip Sarkar", Comparative Study of Blockchain Development Platforms: Features and  Applications," Distributed, Parallel, and Cluster Computing (cs.DC); Cryptography and Security (cs.CR)",2022
+" 
+Pierre-Antoine Thouvenin| 
+Audrey Repetti| 
+Pierre Chainais", A distributed Gibbs Sampler with Hypergraph Structure for  High-Dimensional Inverse Problems," Methodology (stat.ME); Distributed, Parallel, and Cluster Computing (cs.DC); Signal Processing (eess.SP)",2022

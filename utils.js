@@ -7,32 +7,28 @@ const stringToHTML = function (str) {
 
 
 const getArticleData = (page) => {
-  const authorsQueries = page.querySelectorAll(".gs_a");
+  const authorsQueries = page.querySelectorAll("#dlpage .list-authors");
   const authors = []
-  const publications = []
-  const years = []
-  const sources = []
+  const find = ',';
+  const re = new RegExp(find, 'g');
   for (let i=0; i<authorsQueries.length; i++){
-    const tags = authorsQueries[i].textContent.split('-');
-    publications.push(tags[1].split(',')[0]);
-    authors.push(tags[0]);
-    years.push(tags[1].split(',')[1]);
-    sources.push(tags[2]);
+    authors.push(authorsQueries[i].textContent.trim().replace('Authors:', '').replace(re, '|'));
   }
 
-  const citeQueries = page.querySelectorAll(".gs_fl")
-  const citedNumber = [];
-  for (let i = 0; i < citeQueries.length; i++) {
-    citedNumber.push(Number(citeQueries[i].textContent.split('by')[1]?.split('Related')[0]))
-  }
-
-  const titlesQueries = page.querySelectorAll(".gs_rt");
+  const titlesQueries = page.querySelectorAll("#dlpage .list-title");
   const titles = []
   for (let i=0; i<titlesQueries.length; i++){
-    titles.push(titlesQueries[i].textContent);
+    titles.push(titlesQueries[i].textContent.trim().replace('Title:', ''));
   }
 
-  return {authors, titles, publications, years, sources, citedNumber};
+  const subjectsQueries = page.querySelectorAll("#dlpage .list-subjects");
+  const subjects = []
+  for (let i=0; i<subjectsQueries.length; i++){
+    subjects.push(subjectsQueries[i].textContent.trim().replace('Subjects:', ''));
+  }
+
+
+  return {authors, titles, subjects};
 }
 
 module.exports = {
